@@ -1,0 +1,1 @@
+# mint-large-amount-of-cnft
