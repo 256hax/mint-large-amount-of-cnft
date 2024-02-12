@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-async function main() {
+const setTakerAddressToDB = async () => {
   const takerAddressCSV = fs.readFileSync('./src/assets/takerAddress.csv', 'utf8');
   const takerAddressArray = takerAddressCSV.split('\n');
 
@@ -20,7 +20,7 @@ async function main() {
   }
 }
 
-main()
+setTakerAddressToDB()
   .then(async () => {
     await prisma.$disconnect();
   })

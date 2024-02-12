@@ -2,11 +2,11 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-async function main() {
+export const findFirstTakerWhereSignatureNull = async () => {
   const taker = await prisma.taker.findFirst({
     where: {
       OR: [
-        { signature: null }, // where: null or ''
+        { signature: null }, // null supports null or ''
       ]
     },
     orderBy: {
@@ -17,7 +17,7 @@ async function main() {
   console.log(taker);
 }
 
-main()
+findFirstTakerWhereSignatureNull()
   .then(async () => {
     await prisma.$disconnect();
   })
