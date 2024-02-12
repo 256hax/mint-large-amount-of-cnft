@@ -1,3 +1,6 @@
 .env
 
+# Prisma
 dev.db
+migrations
+dev.db-journal
