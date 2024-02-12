@@ -6,9 +6,7 @@ export const findFirstTakerWhereSignatureNull = async () => {
   try {
     const taker = await prisma.taker.findFirst({
       where: {
-        OR: [
-          { signature: null }, // null supports null or ''
-        ],
+           signature: null // null supports null or ''
       },
       orderBy: {
         id: 'asc',
@@ -22,3 +20,5 @@ export const findFirstTakerWhereSignatureNull = async () => {
     throw error;
   }
 };
+
+// findFirstTakerWhereSignatureNull();
