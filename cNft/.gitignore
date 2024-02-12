@@ -4,6 +4,3 @@
 dev.db
 migrations
 dev.db-journal
-
-# Solana
-takerAddress.csv
