@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-async function main() {
+const main = async () => {
   const taker = await prisma.taker.findMany({
     orderBy: {
       id: 'asc',
