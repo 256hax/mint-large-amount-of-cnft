@@ -7,7 +7,7 @@ The code uses SQLite to store taker addresses and minted signatures.
 
 This is for experimental purposes only.  
 
-https://github.com/256hax/mint-large-amount-of-cnft/raw/main/docs/demo.mp4
+https://github.com/256hax/mint-large-amount-of-cnft/assets/1146563/3e13e170-fc10-4a1f-9c1b-89395e9a2203
 
 ## Running Steps
 1. Setup
