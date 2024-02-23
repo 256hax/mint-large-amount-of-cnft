@@ -5,7 +5,9 @@ Minting a Large Number of cNFTs.
 This code example demonstrates how to mint a large number (e.g., 100) of cNFTs.  
 The code uses SQLite to store taker addresses and minted signatures.  
 
-This is for experimental purposes only.
+This is for experimental purposes only.  
+
+https://github.com/256hax/mint-large-amount-of-cnft/raw/main/docs/demo.mp4
 
 ## Running Steps
 1. Setup
