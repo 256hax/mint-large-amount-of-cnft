@@ -40,7 +40,6 @@ const mintWithoutCollection = async () => {
 
       umi.use(keypairIdentity(payerKeypair));
 
-      console.log(1);
       // ----------------------------------------------------
       //  Minting without a Collection
       // ----------------------------------------------------
@@ -50,10 +49,9 @@ const mintWithoutCollection = async () => {
 
       // Replace to your Merkle Tree.
       const merkleTree = publicKey(
-        'AxR2UTtq3pZ5ZFaAs9tSWtiz4HftTAftKzMfs8ZjtcqQ'
+        '8dFVkzvhtFjEtFHo52vYvwY994AM9NynMtYu7j8Rz3Pz'
       );
 
-      console.log(2);
       const mintingResult = await mintV1(umi, {
         leafOwner: publicKey(takerInfo.address),
         merkleTree,
@@ -68,7 +66,6 @@ const mintWithoutCollection = async () => {
         },
       }).sendAndConfirm(umi);
 
-      console.log(3);
       // console.log minting result.
       const signature = bs58.encode(mintingResult.signature);
       console.log(`${takerInfo.id}, ${takerInfo.address}, ${signature}`);
@@ -76,7 +73,6 @@ const mintWithoutCollection = async () => {
       // Update signature to DB.
       const updatedResult = await updateSignatureToDB(takerInfo.id, signature);
 
-      console.log(4);
       // If the update successful.
       if (updatedResult.signature) {
         await sleep(300);
