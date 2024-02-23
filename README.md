@@ -74,12 +74,11 @@ Write your Merkle Tree to src/mintWithoutCollection.ts.
 % ts-node src/mintWithoutCollection.ts
 ```
 
-## Remarks
+## Note
 ### Get All Taker Address in DB
 ```
 % ts-node src/findAllTakers.ts
 ```
-
 
 ### Prisma Command List
 Init Table:
@@ -91,3 +90,6 @@ Reset Data:
 ```
 % npx prisma migrate reset
 ```
+
+### Lean more Compressed NFT
+[256hax GitHub - Metaplex Bubblegum (Compressed NFT)](https://github.com/256hax/solana-anchor-react-minimal-example/tree/main/scripts/metaplex/bubblegum_CompressedNFT)
