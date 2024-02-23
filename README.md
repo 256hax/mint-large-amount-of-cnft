@@ -20,6 +20,7 @@ https://github.com/256hax/mint-large-amount-of-cnft/assets/1146563/3e13e170-fc10
 ### Install Packages in umi directory
 ```
 % cd umi
+% mv .env.example .env
 % npm i
 ```
 
