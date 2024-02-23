@@ -91,5 +91,5 @@ Reset Data:
 % npx prisma migrate reset
 ```
 
-### Lean more Compressed NFT
+### Learn more Compressed NFT
 [256hax GitHub - Metaplex Bubblegum (Compressed NFT)](https://github.com/256hax/solana-anchor-react-minimal-example/tree/main/scripts/metaplex/bubblegum_CompressedNFT)
