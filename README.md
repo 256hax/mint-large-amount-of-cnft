@@ -74,6 +74,8 @@ Write your Merkle Tree to src/mintWithoutCollection.ts.
 % ts-node src/mintWithoutCollection.ts
 ```
 
+You can stop it at anytime with command+C.
+
 ## Note
 ### Get All Taker Address in DB
 ```
